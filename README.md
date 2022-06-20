@@ -1,3 +1,3 @@
 #Bot
 
-apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/Onumb/SSH/main/Bot/Install)
+apt install wget -y; bash <(wget -qO- raw.githubusercontent.com/Onumb/Bot/main/Install)
