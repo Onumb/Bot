@@ -33,9 +33,8 @@ menu_compra() {
     }
     fun_menucompra $id_chatuser
     local msg
-        msg+="🚀 <b>COMPRA SSH? FALE COM Ricardo A.</b> 🚀\n\n"
-        msg+="Nossos Login Sao De 31 Dias, Mantenha O App Atualizado Clicando em ONUMB NET, Pelo Próprio App.\n"
-        msg+=" 1 LOGIN 8$; 2 LOGIN 15$; 3 LOGIN 22$."
+        msg="=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=\n"
+        msg+=" 1 LOGIN 8 R$  2 LOGIN 15 R$ 3 LOGIN 22R$."
         ShellBot.editMessageText --chat_id $id_chatuser \
         --message_id ${callback_query_message_message_id[$id]} \
         --text "$(echo -e $msg)" \
