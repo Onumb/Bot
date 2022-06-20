@@ -33,8 +33,9 @@ menu_compra() {
     }
     fun_menucompra $id_chatuser
     local msg
-        msg+="🚀 <b>COMPRA SSH NO Shop SSH Bot 🇧🇷</b> 🚀\n\n"
-        msg+="Nossos Login Sao De 31 Dias, Mantenha O App Atualizado Clicando em ONUMB NET, Pelo Próprio App."
+        msg+="🚀 <b>COMPRA SSH? FALE COM Ricardo A.</b> 🚀\n\n"
+        msg+="Nossos Login Sao De 31 Dias, Mantenha O App Atualizado Clicando em ONUMB NET, Pelo Próprio App.\n"
+        msg+=" 1 LOGIN 8$; 2 LOGIN 15$; 3 LOGIN 22$."
         ShellBot.editMessageText --chat_id $id_chatuser \
         --message_id ${callback_query_message_message_id[$id]} \
         --text "$(echo -e $msg)" \
@@ -88,7 +89,7 @@ rm -rf /etc/SSHPlus/userteste/$usuario.sh" > /etc/SSHPlus/userteste/$usuario.sh
 #enviar sks
 enviarsks() {
     ShellBot.answerCallbackQuery --callback_query_id ${callback_query_id[$id]} \
-        --text " 🌐 ENVIANDO ONUMB NET"
+        --text " 🌐 AGUARDE..."
     ShellBot.sendDocument --chat_id ${callback_query_message_chat_id} \
         --document "@/root/ONUMB NET.apk" \
     return 0
@@ -116,8 +117,7 @@ unset keyboard1
 keyboard1="$(ShellBot.InlineKeyboardMarkup -b 'botao1')"
 unset botao2
 botao2=''
-ShellBot.InlineKeyboardButton --button 'botao2' --line 1 --text '🇧🇷 COMPRAR 🇧🇷'  --callback_data '3' --url 't.me/Onumb_bot' # bot
-ShellBot.InlineKeyboardButton --button 'botao2' --line 2 --text 'SUPORTE'  --callback_data '3' --url 't.me/Onumb' # pv
+ShellBot.InlineKeyboardButton --button 'botao2' --line 1 --text '🌐 COMPRE AQUI 🌐'  --callback_data '3' --url 't.me/Onumb' # pv
 unset keyboard2
 keyboard2="$(ShellBot.InlineKeyboardMarkup -b 'botao2')"
 while :; do
